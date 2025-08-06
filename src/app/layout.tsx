@@ -38,18 +38,18 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Omnifood Team",
-      url: "https://omnifood-app-git-main-hasbis-projects-908d1198.vercel.app",
+      url: "https://omnifood-6ebw19a28-hasbis-projects-908d1198.vercel.app/",
     },
   ],
   creator: "Omnifood",
   metadataBase: new URL(
-    "https://omnifood-app-git-main-hasbis-projects-908d1198.vercel.app"
+    "https://omnifood-6ebw19a28-hasbis-projects-908d1198.vercel.app/"
   ),
   openGraph: {
     title: "Omnifood – AI-Powered Healthy Food Subscription",
     description:
       "Never cook again! Omnifood AI plans and delivers your personalized meals every day of the year. 100% organic, reusable packaging, and tailored to your taste.",
-    url: "https://omnifood-app-git-main-hasbis-projects-908d1198.vercel.app",
+    url: "https://omnifood-6ebw19a28-hasbis-projects-908d1198.vercel.app/",
     siteName: "Omnifood",
     images: [
       {
