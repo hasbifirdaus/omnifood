@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     siteName: "Omnifood",
     images: [
       {
-        url: "https://omnifood-app-git-main-hasbis-projects-908d1198.vercel.app", // Jangan lupa ganti
+        url: "/og-image.png", // Jangan lupa ganti
         width: 1200,
         height: 630,
         alt: "Omnifood meal delivery preview image",
