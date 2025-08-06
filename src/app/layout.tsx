@@ -38,20 +38,20 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Omnifood Team",
-      url: "https://omnifood.com",
+      url: "https://omnifood-c4h2.vercel.app",
     },
   ],
   creator: "Omnifood",
-  metadataBase: new URL("https://omnifood.com"),
+  metadataBase: new URL("https://omnifood-c4h2.vercel.app"),
   openGraph: {
     title: "Omnifood – AI-Powered Healthy Food Subscription",
     description:
       "Never cook again! Omnifood AI plans and delivers your personalized meals every day of the year. 100% organic, reusable packaging, and tailored to your taste.",
-    url: "https://omnifood.com",
+    url: "https://omnifood-c4h2.vercel.app",
     siteName: "Omnifood",
     images: [
       {
-        url: "https://omnifood.com/images/omnifood-og.jpg", // Jangan lupa ganti
+        url: "/og-image.png", // Jangan lupa ganti
         width: 1200,
         height: 630,
         alt: "Omnifood meal delivery preview image",
@@ -59,6 +59,13 @@ export const metadata: Metadata = {
     ],
     type: "website",
     locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hasbi Fauzun - Full Stack Web Developer",
+    description:
+      "Welcome to Hasbi's portfolio. See the latest full stack web projects built with modern technologies.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
