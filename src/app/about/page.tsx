@@ -78,7 +78,7 @@ const page = () => {
               <div className="bg-white p-14 rounded-xl shadow-md items-center md:flex justify-between  gap-15">
                 <div className="md:w-2xl">
                   <Image
-                    src="img/about/team-member-1.jpg"
+                    src="/img/about/team-member-1.jpg"
                     alt="Team Member"
                     width={125}
                     height={125}
@@ -101,7 +101,7 @@ const page = () => {
               <div className="bg-white p-14 rounded-xl shadow-md md:flex justify-between items-center gap-15">
                 <div className="md:w-2xl">
                   <Image
-                    src="img/about/team-member-2.jpg"
+                    src="/img/about/team-member-2.jpg"
                     alt="Team Member"
                     width={125}
                     height={125}
@@ -125,7 +125,7 @@ const page = () => {
               <div className="bg-white p-14 rounded-xl shadow-md text-xl md:flex justify-between items-center gap-15">
                 <div className="md:w-2xl">
                   <Image
-                    src="img/about/team-member-3.jpg"
+                    src="/img/about/team-member-3.jpg"
                     alt="Team Member"
                     width={125}
                     height={125}
