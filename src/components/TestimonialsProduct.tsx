@@ -14,6 +14,16 @@ type Testimonial = {
   image: string;
 };
 
+type RandomUser = {
+  name: {
+    first: string;
+    last: string;
+  };
+  picture: {
+    large: string;
+  };
+};
+
 const sampleTitles = [
   "Wellness Coach",
   "Software Developer",
@@ -41,7 +51,7 @@ const TestimonialsProduct = () => {
       const data = await res.json();
 
       const generated: Testimonial[] = data.results.map(
-        (user: any, index: number) => ({
+        (user: RandomUser, index: number) => ({
           name: `${user.name.first} ${user.name.last}`,
           image: user.picture.large,
           title: sampleTitles[index % sampleTitles.length],
