@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import Image from "next/image";
 
 export const testimonials = [
   {
@@ -80,9 +81,11 @@ const TestimonialsProduct = () => {
               <SwiperSlide key={index}>
                 <div className="bg-white p-10 rounded-2xl shadow-md text-left h-full flex flex-col min-h-[150px] mx-5 ">
                   <div className=" md:flex items-center gap-10 mt-4 ">
-                    <img
+                    <Image
                       src={testimonial.image}
                       alt={testimonial.name}
+                      width={25}
+                      height={25}
                       className="w-25 h-25 rounded-full object-cover mb-8"
                     />
                     <div>
