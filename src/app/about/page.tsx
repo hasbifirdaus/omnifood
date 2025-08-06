@@ -107,7 +107,7 @@ const page = () => {
                 </div>
                 <p className="text-gray-200 mt-3 leading-normal text-xl">
                   "David leads our technology strategy, building the AI engine
-                  that powers Omnifood's personalized meal planning. With a
+                  that powers Omnifood&apos;s personalized meal planning. With a
                   background in machine learning and nutrition science, he
                   ensures smart, efficient, and healthy recommendations."
                 </p>
@@ -189,7 +189,7 @@ const page = () => {
               Our Vision
             </h3>
             <p className="text-gray-700 text-lg">
-              To become the world's most trusted platform for smart,
+              To become the world&apos;s most trusted platform for smart,
               sustainable, and personalized food experiences.
             </p>
           </div>
@@ -247,8 +247,9 @@ const page = () => {
               Well-being
             </h3>
             <p className="text-gray-700 text-lg">
-              We care deeply about people's health and happiness, creating meals
-              and experiences that support a balanced, nourishing lifestyle.
+              We care deeply about people&apos;s health and happiness, creating
+              meals and experiences that support a balanced, nourishing
+              lifestyle.
             </p>
           </div>
         </div>

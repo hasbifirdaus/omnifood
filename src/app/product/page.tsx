@@ -437,7 +437,7 @@ export default function Page() {
                 id="plan-text"
                 className="text-[1.6rem] leading-[1.6] text-[#6f6f6f]"
               >
-                per month. That's just $13 per meal!
+                per month. That&apos;s just $13 per meal!
               </p>
             </header>
             <ul className="list">
@@ -486,7 +486,7 @@ export default function Page() {
                 id="plan-text"
                 className="text-[1.6rem] leading-[1.6] text-[#6f6f6f]"
               >
-                per month. That's just $11 per meal!
+                per month. That&apos;s just $11 per meal!
               </p>
             </header>
             <ul className="list">

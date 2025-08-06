@@ -11,7 +11,7 @@ const Testimonials = () => {
           Testimonials
         </span>
         <h2 className="heading-secondary mb-10 md:mb-20 text-center md:text-left">
-          Once you try it, you can't go back
+          Once you try it, you can&apos;t go back
         </h2>
 
         <div
@@ -49,7 +49,7 @@ const Testimonials = () => {
               className="text-2xl md:text-3xl leading-relaxed mb-4"
             >
               The AI algorithm is crazy good, it chooses the right meals for me
-              every time. It's amazing not to worry about food anymore!
+              every time. It&apos;s amazing not to worry about food anymore!
             </blockquote>
             <p id="testimonial-name" className="text-xl text-gray-500">
               &mdash; Ben Hadley
@@ -67,8 +67,9 @@ const Testimonials = () => {
               id="testimonial-text"
               className="text-xl md:text-3xl leading-relaxed mb-4"
             >
-              Omnifood is a life saver! I just started a company, so there's no
-              time for cooking. I couldn't live without my daily meals now!
+              Omnifood is a life saver! I just started a company, so
+              there&apos;s no time for cooking. I couldn&apos;t live without my
+              daily meals now!
             </blockquote>
             <p id="testimonial-name" className="text-xl text-gray-500">
               &mdash; Steve Miller

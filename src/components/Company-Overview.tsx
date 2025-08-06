@@ -37,7 +37,7 @@ export default function CompanyOverview() {
           >
             Omnifood is a cutting-edge AI-powered meal subscription service
             dedicated to helping people eat healthy, personalized meals every
-            day-without the hassle. Founded in 2025, we're a team of
+            day-without the hassle. Founded in 2025, we&apos;re a team of
             nutritionists, chefs, and tech enthusiasts committed to
             revolutionizing how the world eats.
           </p>
