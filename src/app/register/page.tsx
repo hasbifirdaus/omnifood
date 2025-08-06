@@ -22,8 +22,10 @@ export default function RegisterPage() {
 
       toast.success("Registrasi berhasil!");
       router.push("/login");
-    } catch (error: any) {
-      toast.error(error.message || "Gagal mendaftar");
+    } catch (error: unknown) {
+      const errMsg =
+        error instanceof Error ? error.message : "Failed to register";
+      toast.error(errMsg);
     }
   };
 

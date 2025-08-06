@@ -1,6 +1,17 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
+interface Blog {
+  content: string;
+  objectId: string;
+  title: string;
+  imageUrl: string;
+  publishDate?: string;
+  tags?: string[];
+  excerpt?: string;
+  author?: string;
+}
+
 export const metadata: Metadata = {
   title: "Blog - Omnifood",
   description: "Explore healthy lifestyle blogs by Omnifood AI.",
@@ -69,7 +80,7 @@ export default async function BlogPage() {
           <p className="text-gray-600">No blogs available at the moment.</p>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
-            {blogs.map((blog: any) => {
+            {blogs.map((blog: Blog) => {
               const formattedDate = blog.publishDate
                 ? new Date(blog.publishDate).toLocaleDateString("en-GB", {
                     day: "2-digit",

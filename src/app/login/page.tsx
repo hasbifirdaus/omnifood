@@ -26,9 +26,13 @@ export default function LoginPage() {
         login(response.data.user);
         toast.success("Login success!");
         router.push("/create-blog");
-      } catch (error: any) {
-        const message = error.response?.data?.message || "Login failed";
-        toast.error(message);
+      } catch (error: unknown) {
+        if (axios.isAxiosError(error)) {
+          const message = error.response?.data?.message || "Login failed";
+          toast.error(message);
+        } else {
+          toast.error("An unexpected error occurred");
+        }
       }
     },
   });

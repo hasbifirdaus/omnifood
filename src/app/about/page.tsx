@@ -85,10 +85,10 @@ const page = () => {
                   <p className="text-gray-600">Chief Nutritionist</p>
                 </div>
                 <p className="text-gray-200 mt-3 leading-normal text-xl">
-                  "Lisa has over 10 years of experience designing personalized
-                  nutrition plans. She ensures every meal is not only incredibly
-                  delicious but also perfectly aligned with your health goals
-                  and specific dietary needs."
+                  &quot;Lisa has over 10 years of experience designing
+                  personalized nutrition plans. She ensures every meal is not
+                  only incredibly delicious but also perfectly aligned with your
+                  health goals and specific dietary needs.&quot;
                 </p>
               </div>
 
@@ -106,10 +106,11 @@ const page = () => {
                   <p className="text-gray-600">CTO & AI Specialist</p>
                 </div>
                 <p className="text-gray-200 mt-3 leading-normal text-xl">
-                  "David leads our technology strategy, building the AI engine
-                  that powers Omnifood&apos;s personalized meal planning. With a
-                  background in machine learning and nutrition science, he
-                  ensures smart, efficient, and healthy recommendations."
+                  &quot;David leads our technology strategy, building the AI
+                  engine that powers Omnifood&apos;s personalized meal planning.
+                  With a background in machine learning and nutrition science,
+                  he ensures smart, efficient, and healthy
+                  recommendations.&quot;
                 </p>
               </div>
 
@@ -127,10 +128,10 @@ const page = () => {
                   <p className="text-gray-600">Head of Culinary</p>
                 </div>
                 <p className="text-gray-200 mt-3 leading-normal  text-xl">
-                  "Sofia crafts the delicious and nutritious menus at Omnifood.
-                  With years of experience as a professional chef and a passion
-                  for wellness cuisine, she brings flavor, creativity, and
-                  balance to every plate."
+                  &quot;Sofia crafts the delicious and nutritious menus at
+                  Omnifood. With years of experience as a professional chef and
+                  a passion for wellness cuisine, she brings flavor, creativity,
+                  and balance to every plate.&quot;
                 </p>
               </div>
             </div>
