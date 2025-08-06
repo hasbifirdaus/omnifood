@@ -12,6 +12,10 @@ type TeamMember = {
   role: string;
   bio: string;
 };
+type RandomUser = {
+  name: { first: string; last: string };
+  picture: { large: string };
+};
 
 const roles = [
   "Frontend Developer",
@@ -30,12 +34,14 @@ export default function TeamGrid() {
       const res = await fetch("https://randomuser.me/api/?results=6");
       const data = await res.json();
 
-      const members = data.results.map((user: any, index: number) => ({
-        name: `${user.name.first} ${user.name.last}`,
-        photo: user.picture.large,
-        role: roles[index % roles.length], // Ambil role dari array
-        bio: "Passionate about helping people live healthier lives with personalized nutrition plans.",
-      }));
+      const members: TeamMember[] = data.results.map(
+        (user: RandomUser, index: number) => ({
+          name: `${user.name.first} ${user.name.last}`,
+          photo: user.picture.large,
+          role: roles[index % roles.length],
+          bio: "Passionate about helping people live healthier lives with personalized nutrition plans.",
+        })
+      );
 
       setTeam(members);
     };

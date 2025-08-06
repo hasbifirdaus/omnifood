@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const page = () => {
@@ -13,10 +14,12 @@ const page = () => {
             id="step-img-box"
             className="relative flex items-center justify-center "
           >
-            <img
-              src="img/about/hero-about-2.jpg"
+            <Image
+              src="/img/about/hero-about-2.jpg"
               id="step-img"
               alt="About Omnifood"
+              width={290}
+              height={440}
               className="w-l"
             />
           </div>
@@ -74,9 +77,11 @@ const page = () => {
 
               <div className="bg-white p-14 rounded-xl shadow-md items-center md:flex justify-between  gap-15">
                 <div className="md:w-2xl">
-                  <img
+                  <Image
                     src="https://randomuser.me/api/portraits/women/44.jpg"
                     alt="Team Member"
+                    width={125}
+                    height={125}
                     className="w-28 h-28 mx-auto rounded-full mb-4 object-cover"
                   />
                   <h4 className="text-xl font-semibold text-orange-600">
@@ -95,9 +100,11 @@ const page = () => {
               {/* Team Member 2 */}
               <div className="bg-white p-14 rounded-xl shadow-md md:flex justify-between items-center gap-15">
                 <div className="md:w-2xl">
-                  <img
+                  <Image
                     src="https://randomuser.me/api/portraits/men/32.jpg"
                     alt="Team Member"
+                    width={125}
+                    height={125}
                     className="w-28 h-28 mx-auto rounded-full mb-4 object-cover"
                   />
                   <h4 className="text-xl font-semibold text-orange-600">
@@ -117,9 +124,11 @@ const page = () => {
               {/* Team Member 3 */}
               <div className="bg-white p-14 rounded-xl shadow-md text-xl md:flex justify-between items-center gap-15">
                 <div className="md:w-2xl">
-                  <img
+                  <Image
                     src="https://randomuser.me/api/portraits/women/68.jpg"
                     alt="Team Member"
+                    width={125}
+                    height={125}
                     className="w-28 h-28 mx-auto rounded-full mb-4 object-cover"
                   />
                   <h4 className="text-xl font-semibold text-orange-600">
@@ -160,9 +169,11 @@ const page = () => {
             className="rounded-[11px] border-2 border-gray-100 p-18 bg-white shadow-md"
           >
             <div className="flex justify-center mb-5">
-              <img
+              <Image
                 src="img/about/mision.svg"
                 alt="Our Mission"
+                width={20}
+                height={20}
                 className="w-20 h-20"
               />
             </div>
@@ -179,9 +190,11 @@ const page = () => {
             className="rounded-[11px] border-2 border-gray-100 p-18 bg-white shadow-md"
           >
             <div className="flex justify-center mb-5">
-              <img
+              <Image
                 src="img/about/vision.svg"
                 alt="Our Vision"
+                width={20}
+                height={20}
                 className="w-20 h-20"
               />
             </div>

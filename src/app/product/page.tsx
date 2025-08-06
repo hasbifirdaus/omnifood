@@ -643,7 +643,7 @@ export default function Page() {
                       </div>
                     </div>
                     <p className="text-gray-800 mb-4 text-xl">
-                      "{testimonial.text}"
+                      &quot;{testimonial.text}&quot;
                     </p>
                   </div>
                 </SwiperSlide>
