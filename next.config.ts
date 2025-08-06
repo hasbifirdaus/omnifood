@@ -1,3 +1,4 @@
+// Trigger rebuild by whitespace change
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
