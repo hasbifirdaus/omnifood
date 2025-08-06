@@ -1,0 +1,181 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+html {
+  font-size: 10px;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+  --font-rubik: "Rubik", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  /* color: var(--foreground); */
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@theme {
+  /* TYPOGRAPHY SYSTEM */
+  --font-size-10: 1rem;
+  --font-size-12: 1.2rem;
+  --font-size-14: 1.4rem;
+  --font-size-16: 1.6rem;
+  --font-size-18: 1.8rem;
+  --font-size-20: 2rem;
+  --font-size-24: 2.4rem;
+  --font-size-30: 3rem;
+  --font-size-36: 3.6rem;
+  --font-size-44: 4.4rem;
+  --font-size-52: 5.2rem;
+  --font-size-62: 6.2rem;
+  --font-size-74: 7.4rem;
+  --font-size-86: 8.6rem;
+  --font-size-98: 9.8rem;
+
+  --line-height-default: 1;
+  --line-height-sm: 1.05;
+  --line-height-md: 1.2;
+  --line-height-base: 1.6;
+  --line-height-lg: 1.8;
+
+  --letter-spacing-tight: -0.5px;
+  --letter-spacing-wide: 0.75px;
+
+  /* COLORS */
+  --color-primary: #e67e22;
+  --color-primary-light: #fdf2e9;
+  --color-primary-light-2: #fae5d3;
+  --color-primary-accent: #eb984e;
+  --color-primary-shade: #cf711f;
+  --color-primary-dark: #45260a;
+
+  --color-gray-200: #888;
+  --color-gray-300: #767676;
+  --color-gray-400: #6f6f6f;
+  --color-gray-500: #555;
+  --color-gray-600: #333;
+
+  /* SHADOW */
+  --shadow-custom: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+  /* BORDER RADIUS */
+  --radius-default: 9px;
+  --radius-md: 11px;
+
+  /* SPACING SYSTEM */
+  --spacing-2: 0.2rem;
+  --spacing-4: 0.4rem;
+  --spacing-8: 0.8rem;
+  --spacing-12: 1.2rem;
+  --spacing-16: 1.6rem;
+  --spacing-24: 2.4rem;
+  --spacing-32: 3.2rem;
+  --spacing-48: 4.8rem;
+  --spacing-64: 6.4rem;
+  --spacing-80: 8rem;
+  --spacing-96: 9.6rem;
+  --spacing-128: 12.8rem;
+}
+
+@layer components {
+  .container-box {
+    @apply px-[2rem] sm:px-[2.4rem] md:px-[3.2rem] mx-auto md:max-w-[120rem];
+  }
+
+  .grid-base {
+    @apply grid gap-x-[3.2rem] sm:gap-x-[4.8rem] md:gap-x-[6.4rem] gap-y-[4.8rem] md:gap-y-[9.6rem];
+  }
+
+  .heading-primary {
+    @apply text-[3.2rem] sm:text-[4rem] md:text-[5.2rem] font-bold leading-tight text-gray-600 mb-[3.2rem] tracking-[-0.5px];
+  }
+
+  .heading-secondary {
+    @apply text-[2.8rem] sm:text-[3.6rem] md:text-[4.4rem] font-bold leading-[1.2] text-gray-600 mb-[6.4rem] md:mb-[9.6rem] tracking-[-0.5px];
+  }
+
+  .heading-tertiary {
+    @apply text-[2.2rem] sm:text-[2.6rem] md:text-[3rem] font-bold leading-[1.2] text-gray-600 mb-[3.2rem] tracking-[-0.5px];
+  }
+
+  .subheading {
+    @apply block text-[1.4rem] sm:text-[1.5rem] md:text-[1.6rem] font-medium text-primary-shade uppercase mb-[1.2rem] sm:mb-[1.6rem] tracking-[0.75px];
+  }
+
+  .btn {
+    @apply inline-block text-[1.6rem] sm:text-[1.8rem] md:text-[2rem] font-semibold py-[1.2rem] sm:py-[1.4rem] md:py-[1.6rem] px-[2.4rem] sm:px-[2.8rem] md:px-[3.2rem] rounded-[9px] transition-all;
+  }
+
+  .btn--full {
+    @apply bg-primary text-white hover:bg-primary-shade;
+  }
+
+  .btn--outline {
+    @apply bg-white text-gray-500 hover:bg-primary-light hover:shadow-inner;
+  }
+
+  .btn--form {
+    @apply bg-primary-dark text-primary-light py-[1rem] sm:py-[1.2rem] self-end hover:bg-white hover:text-gray-500;
+  }
+
+  .link {
+    @apply text-primary border-b border-current pb-[2px] transition-all hover:border-transparent hover:text-primary-shade;
+  }
+
+  .list {
+    @apply list-none flex flex-col gap-[1.2rem] sm:gap-[1.6rem];
+  }
+
+  .list-item {
+    @apply text-[1.6rem] sm:text-[1.8rem] flex items-center gap-[1.2rem] sm:gap-[1.6rem] leading-[1.2];
+  }
+
+  .list-icon {
+    @apply w-[2.4rem] sm:w-[3rem] h-[2.4rem] sm:h-[3rem] text-primary;
+  }
+
+  .center-text {
+    @apply text-center;
+  }
+
+  .margin-right-sm {
+    @apply mr-[1.2rem] sm:mr-[1.6rem];
+  }
+
+  .margin-bottom-md {
+    @apply mb-[3.2rem] sm:mb-[4.8rem];
+  }
+
+  strong {
+    @apply font-medium;
+  }
+
+  *:focus {
+    @apply outline-none shadow-[0_0_0_0.8rem_rgba(230,125,34,0.5)];
+  }
+}
