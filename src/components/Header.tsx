@@ -118,13 +118,13 @@ const Header = () => {
         </div>
 
         <li>
-          <a
+          <Link
             href="#section-how"
             className="inline-block no-underline text-[#333] font-medium text-[1.8rem] hover:text-[#cf711f]"
             onClick={closeMenu}
           >
             How it works
-          </a>
+          </Link>
         </li>
         <li>
           <Link
@@ -151,12 +151,12 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <a
+          <Link
             href="/#section-cta"
             className="inline-block no-underline text-white font-medium text-[1.8rem] transition-all duration-300 bg-[#e67e22] hover:bg-[#cf711f] py-[1.2rem] px-[2.4rem] rounded-[9px]"
           >
             Try for free
-          </a>
+          </Link>
         </li>
       </ul>
     </header>
