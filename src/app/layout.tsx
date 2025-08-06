@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Omnifood",
     images: [
       {
-        url: "/og-image.png", // Jangan lupa ganti
+        url: "https://omnifood-3sit.vercel.app/og-image.png", // Jangan lupa ganti
         width: 1200,
         height: 630,
         alt: "Omnifood meal delivery preview image",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     title: "Hasbi Fauzun - Full Stack Web Developer",
     description:
       "Welcome to Hasbi's portfolio. See the latest full stack web projects built with modern technologies.",
-    images: ["/og-image.png"],
+    images: ["https://omnifood-3sit.vercel.app/og-image.png"],
   },
   robots: {
     index: true,
