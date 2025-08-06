@@ -28,8 +28,13 @@ export async function POST(req: NextRequest) {
         objectId: loginUser.objectId,
       },
     });
-  } catch (error: any) {
-    if (error.code === 3003) {
+  } catch (error: unknown) {
+    if (
+      typeof error === "object" &&
+      error !== null &&
+      "code" in error &&
+      error.code === 3003
+    ) {
       return NextResponse.json({ message: "Wrong password" }, { status: 401 });
     }
 
