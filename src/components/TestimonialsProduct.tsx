@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import Image from "next/image";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -102,11 +101,9 @@ const TestimonialsProduct = () => {
               <SwiperSlide key={index}>
                 <div className="bg-white p-10 rounded-2xl shadow-md text-left h-full flex flex-col min-h-[150px] mx-5">
                   <div className="md:flex items-center gap-10 mt-4">
-                    <Image
+                    <img
                       src={testimonial.image}
                       alt={testimonial.name}
-                      width={30}
-                      height={30}
                       className="w-30 h-30 rounded-full object-cover mb-8"
                     />
                     <div>
