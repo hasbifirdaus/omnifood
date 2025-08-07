@@ -105,8 +105,8 @@ const TestimonialsProduct = () => {
                     <Image
                       src={testimonial.image}
                       alt={testimonial.name}
-                      width={100}
-                      height={100}
+                      width={30}
+                      height={30}
                       className="w-30 h-30 rounded-full object-cover mb-8"
                     />
                     <div>
